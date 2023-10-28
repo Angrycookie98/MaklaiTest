@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Made by Yarylovets Viktor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="api_form_block">
+            <div id="api_form_block_title" class="font-size-header fw-700 font_family_merriweather">Виберіть дату народження</div>
+            <form id="api_form" class="d-flex justify-content-between align-items-end flex-wrap mt-2 d-flex-column-3 d-flex-column-sm-1">
+                <div class="font-size-label">
+                    <label for="from_date" class="fw-600">Від:</label><br>
+                    <input id="from_date" class="date_input form_input mt-1 w-100 font-size-label fw-600" name="from_date" type="date">
+                </div>
+                <div class="font-size-label mt-sm-2">
+                    <label for="to_date" class="fw-600">До:</label><br>
+                    <input id="to_date" class="date_input form_input mt-1 w-100 font-size-label fw-600" name="to_date" type="date">
+                </div>
+                <input type="submit" id="send_btn" name="send" value="Оновити" class="form_input mt-sm-3">
+            </form>
+        </div>
+
+        <div id="person_cards_block" class="d-flex justify-content-between d-flex-column-3 flex-wrap d-flex-column-lg-2 d-flex-column-sm-1"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

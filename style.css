@@ -1,0 +1,184 @@
+@font-face{
+	font-family: 'Merriweather';
+	src: url("./fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;	
+}
+@font-face{
+	font-family: 'OpenSans';
+	src: url("./fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;	
+}
+@font-face{
+	font-family: 'OpenSans';
+	src: url("./fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 600;	
+}
+
+*{
+    color: #4A4A68;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.font_family_merriweather{
+    font-family: 'Merriweather';
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-end{
+    align-items: end;
+}
+.align-items-center{
+    align-items: center;
+}
+.d-flex-column-3>*{
+    width: calc(33% - 16px);
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.font-size-label{
+    font-size: 16px;
+}
+.font-size-header{
+    font-size: 24px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.mt-1{
+    margin-top: 8px;
+}
+.mt-2{
+    margin-top: 16px;
+}
+.mt-3{
+    margin-top: 24px;
+}
+.mt-4{
+    margin-top: 48px;
+}
+.mb-1{
+    margin-bottom: 8px;
+}
+.ml-1{
+    margin-left: 8px;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+body{
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 80px 80px 67px;
+}
+
+
+#api_form{
+    border-radius: 2px;
+    background-color: #EDEFF0;
+    padding: 24px;
+}
+
+#send_btn{
+    background: #0D326C;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #0D326C;
+    transition: all 0.5s ease-in-out;
+}
+#send_btn:hover{
+    background-color: white;
+    color: #0D326C;
+}
+.form_input{
+    border: none;
+    border-radius: 2px;
+    height: 51px;
+}
+.date_input{
+    padding: 13px 24px;
+}
+.date_input::-webkit-calendar-picker-indicator{
+    background-image: url('./img/date_icon.svg');
+    width: 18px;
+    height: 18px;
+}
+
+
+.person_card{
+    padding: 32px 24px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid rgba(234, 234, 237, 0.50);
+}
+.person_card span{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.person_icon{
+    width: 16px;
+    height: 16px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .container{
+        padding: 48px 15px;
+    }
+    .mt-lg-3{
+        margin-top: 24px;
+    }
+    .d-flex-column-lg-2>*{
+        width: calc(50% - 12px);
+    }
+    .date_input{
+        padding: 13px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        padding-right: 7px;
+        padding-bottom: 30px;
+    }
+    .font-size-header{
+        font-size: 20px;
+    }
+    .mt-sm-2{
+        margin-top: 16px;
+    }
+    .mt-sm-3{
+        margin-top: 24px;
+    }
+    .d-flex-column-sm-1>*{
+        width: 100%;
+    }
+
+    #api_form{
+        padding: 32px;
+        padding-left: 24px;
+    }
+}
